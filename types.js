@@ -10,7 +10,22 @@ function getFunction() {
   return function() {};
 }
 
+function getNull() {
+  return null;
+}
+
+function getNumber() {
+  return 1;
+}
+
+function getObject(type) {
+  return {};
+}
+
 module.exports = {
   getBoolean: getBoolean,
-  getFunction: getFunction
+  getFunction: getFunction,
+  getNull: getNull,
+  getNumber: getNumber,
+  getObject: getObject
 };
