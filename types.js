@@ -6,6 +6,11 @@ function getBoolean(type, n) {
   }
 }
 
+function getFunction() {
+  return function() {};
+}
+
 module.exports = {
-  getBoolean: getBoolean
+  getBoolean: getBoolean,
+  getFunction: getFunction
 };
