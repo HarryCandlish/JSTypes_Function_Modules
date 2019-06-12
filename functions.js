@@ -31,9 +31,19 @@ function find(arr) {
   return num;
 }
 
+function map(arr) {
+  var x = [];
+  arr.map(n => {
+    var y = n + 1;
+    x.push(y);
+  });
+  return x;
+}
+
 module.exports = {
   callsFunction: callsFunction,
   callsProperty: callsProperty,
   filter: filter,
-  find: find
+  find: find,
+  map: map
 };
