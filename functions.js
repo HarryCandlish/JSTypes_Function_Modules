@@ -26,8 +26,14 @@ function filter(arr) {
 
 // filter takes an array as the first parameter, a function as the second parameter, and only returns elements for which the function returns true
 
+function find(arr) {
+  var num = arr.find(n => n == 1);
+  return num;
+}
+
 module.exports = {
   callsFunction: callsFunction,
   callsProperty: callsProperty,
-  filter: filter
+  filter: filter,
+  find: find
 };
