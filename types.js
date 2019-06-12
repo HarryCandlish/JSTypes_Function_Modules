@@ -18,8 +18,12 @@ function getNumber() {
   return 1;
 }
 
-function getObject(type) {
+function getObject() {
   return {};
+}
+
+function getString() {
+  return "hello";
 }
 
 module.exports = {
@@ -27,5 +31,6 @@ module.exports = {
   getFunction: getFunction,
   getNull: getNull,
   getNumber: getNumber,
-  getObject: getObject
+  getObject: getObject,
+  getString: getString
 };
